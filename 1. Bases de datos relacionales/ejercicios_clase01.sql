@@ -39,6 +39,73 @@ VALUES
 ('20','LUI1076','LUIS','H','3','luis2@live.com','655-100-5085','SONY','UNEFON','150','1'),
 ('21','HUG5441','HUGO','H','2','hugo@live.com','655-137-3935','MOTOROLA','AT&T','500','1');
 
+/*
+Consultas Bloque 1
+
+1.	Listar los nombres de los usuarios
+2.	Calcular el saldo máximo de los usuarios de sexo “Mujer”
+3.	Listar nombre y teléfono de los usuarios con teléfono NOKIA, BLACKBERRY o SONY
+4.	Contar los usuarios sin saldo o inactivos
+5.	Listar el login de los usuarios con nivel 1, 2 o 3
+6.	Listar los números de teléfono con saldo menor o igual a 300
+7.	Calcular la suma de los saldos de los usuarios de la compañia telefónica NEXTEL
+8.	Contar el número de usuarios por compañía telefónica
+9.	Contar el número de usuarios por nivel
+10.	Listar el login de los usuarios con nivel 2
+11.	Mostrar el email de los usuarios que usan gmail
+12.	Listar nombre y teléfono de los usuarios con teléfono LG, SAMSUNG o MOTOROLA
+
+
+Consultas Bloque 2
+
+1.	Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca LG o SAMSUNG
+2.	Listar el login y teléfono de los usuarios con compañia telefónica IUSACELL
+3.	Listar el login y teléfono de los usuarios con compañia telefónica que no sea TELCEL
+4.	Calcular el saldo promedio de los usuarios que tienen teléfono marca NOKIA
+5.	Listar el login y teléfono de los usuarios con compañia telefónica IUSACELL o AXEL
+6.	Mostrar el email de los usuarios que no usan yahoo
+7.	Listar el login y teléfono de los usuarios con compañia telefónica que no sea TELCEL o IUSACELL
+8.	Listar el login y teléfono de los usuarios con compañia telefónica UNEFON
+9.	Listar las diferentes marcas de celular en orden alfabético descendentemente
+10.	Listar las diferentes compañias en orden alfabético aleatorio
+11.	Listar el login de los usuarios con nivel 0 o 2
+12.	Calcular el saldo promedio de los usuarios que tienen teléfono marca LG
+
+
+
+
+Consultas Bloque 3
+
+1.	Listar el login de los usuarios con nivel 1 o 3
+2.	Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca BLACKBERRY
+3.	Listar el login de los usuarios con nivel 3
+4.	Listar el login de los usuarios con nivel 0
+5.	Listar el login de los usuarios con nivel 1
+6.	Contar el número de usuarios por sexo
+7.	Listar el login y teléfono de los usuarios con compañia telefónica AT&T
+8.	Listar las diferentes compañias en orden alfabético descendentemente
+9.	Listar el logn de los usuarios inactivos
+10.	Listar los números de teléfono sin saldo
+11.	Calcular el saldo mínimo de los usuarios de sexo “Hombre”
+12.	Listar los números de teléfono con saldo mayor a 300
+
+
+Consultas Bloque 4
+
+1.	Contar el número de usuarios por marca de teléfono
+2.	Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca LG
+3.	Listar las diferentes compañias en orden alfabético ascendentemente
+4.	Calcular la suma de los saldos de los usuarios de la compañia telefónica UNEFON
+5.	Mostrar el email de los usuarios que usan hotmail
+6.	Listar los nombres de los usuarios sin saldo o inactivos
+7.	Listar el login y teléfono de los usuarios con compañia telefónicaIUSACELL o TELCEL
+8.	Listar las diferentes marcas de celular en orden alfabético ascendentemente
+9.	Listar las diferentes marcas de celular en orden alfabético aleatorio
+10.	Listar el login y teléfono de los usuarios con compañia telefónica IUSACELL o UNEFON
+11.	Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca MOTOROLA o NOKIA
+
+*/
+
 -- 1)
 SELECT nombre FROM usuarios;
 SELECT MAX(saldo) AS saldo_maximo FROM usuarios WHERE sexo = 'M';
